@@ -11,7 +11,7 @@ cd logstash
 
 docker build -t logstash .
 
-cd elasticsearch
+cd ../elasticsearch
 
 docker build -t elasticsearch .
 
