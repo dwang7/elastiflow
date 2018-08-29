@@ -1,5 +1,4 @@
-ARG VERSION=6.0.0
-FROM docker.elastic.co/logstash/logstash:$VERSION
+FROM docker.elastic.co/logstash/logstash:6.3.0
 
 # Java VM
 ENV LS_JAVA_OPTS="-Xms4g -Xmx4g -Xss8m"
