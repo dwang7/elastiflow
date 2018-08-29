@@ -15,8 +15,8 @@ cd ../elasticsearch
 
 docker build -t elasticsearch .
 
+cd ../kibana
 
+docker build -t kibana .
 
-
-
-
+cd ..
