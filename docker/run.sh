@@ -8,7 +8,7 @@ docker rm -f kibana
 
 HOSTNAME=`hostname -i`
 
-docker run -d  --name=elasticsearch  elasticsearch:latest
+docker run -d  --name=elasticsearch  -p 9200:9200 -p 9300:9300 elasticsearch:latest  
 docker run -d  --name=logstash --link elasticsearch -p "$HOSTNAME:6343:6343/udp" logstash:latest
 docker run -d  --name=kibana --link elasticsearch -p 5601:5601 kibana:latest
 
