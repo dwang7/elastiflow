@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:6.3.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:6.3.2
 
 ENV http.host="0.0.0.0"
 ENV transport.host="127.0.0.1"
